@@ -1,0 +1,158 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins;
+background:#fffaf5;
+color:#333;
+}
+
+header{
+position:fixed;
+width:100%;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:15px 10%;
+align-items:center;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.logo{
+font-family:"Playfair Display";
+color:#b8962e;
+}
+
+.hero{
+height:90vh;
+background:url("https://source.unsplash.com/1600x900/?luxury-jewelry") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:45px;
+font-family:"Playfair Display";
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#b8962e;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.section{
+padding:100px 10%;
+text-align:center;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.product{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.product:hover{
+transform:translateY(-5px);
+}
+
+.product img{
+width:100%;
+border-radius:8px;
+}
+
+.features{
+list-style:none;
+margin-top:20px;
+}
+
+.features li{
+margin:10px 0;
+font-size:18px;
+}
+
+.testimonials{
+background:#f7f3ea;
+}
+
+.review{
+margin-top:15px;
+}
+
+form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+input,textarea{
+padding:10px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+button{
+background:#b8962e;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* DARK MODE */
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark header{
+background:#1a1a1a;
+}
+
+.dark .product{
+background:#1a1a1a;
+}
